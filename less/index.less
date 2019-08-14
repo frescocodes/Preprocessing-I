@@ -50,10 +50,204 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
 }
 
+
+
+
+
+
+/************ BEGIN STYLING ************/
+
+// variables
+@merri: 'Merriweather', serif;
+@oswald: 'Oswald', sans-serif;
+@main-color: #e7e6e1;
+@secondary-color: #f7f6e7;
+@third-color: #c1c0b9;
+@fourth-color: #537791;
+@portfolio-margins: 3% auto 3% auto;
+
+
+// mixins 
+.flex(){
+	display: flex;
+	justify-content: center;
+}
+
+.padding(){
+	padding: 2% 15%;
+}
+
+.thumbs(){
+	height: 300px;
+	width: 300px;
+	background-color: white;
+}
+
+
+// general styling
+body {
+	background-color: @main-color;
+	font-family: @oswald;
+	line-height: 1.5;
+}
+
+p {
+	letter-spacing: 2px;
+}
+
+h1 {
+	font-family: @merri;
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-family: @merri;
+	font-size: 1.5rem;
+}
+
+.wrapper {
+	// padding: 2% 15%;
+}
+
+
+// Header
+
+header {
+	background-color: @main-color;
+	.flex();
+	justify-content: space-between;
+	width: 100%;
+	.padding();
+
+	.logo {
+		width: 8%;
+	} // end logo
+
+	.navbar {
+		width: 30%;
+		.flex();
+		justify-content: space-between;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			color: @fourth-color;
+			font-family: @oswald;
+			letter-spacing: 3px;
+		} // end links
+	} // end navbar
+
+	
+} // end header
+
+
+// Intro
+
+#intro {
+	height: 75vh;
+	background-color: @main-color;
+	margin: 0;
+	width: 100%;
+	.padding();
+
+	.intro-container {
+		position: relative;
+		left: 10%;
+		width: 70%;
+		top: 25%;
+	} // end container
+
+	h2 {
+		color: @fourth-color;
+	} // end h2
+
+} // end intro section
+
+
+// Portfolio
+
+#portfolio {
+	background-color: @secondary-color;
+	.padding();
+	
+
+	.portfolio-container {
+		.flex();
+		flex-direction: column;
+		justify-content: space-between; 
+
+		.portfolio1 {
+			.flex();
+			justify-content: space-evenly;
+			margin: @portfolio-margins;
+
+			.portfolio1-text {
+				text-align: right;
+				width: 40%;
+			} // end text 1
+
+			.thumbs {
+				.thumbs();
+			} // end thumbs
+		} // end portfolio 1
+
+
+		.portfolio2 {
+			.flex();
+			justify-content: space-evenly;
+			margin: @portfolio-margins;
+
+			.portfolio2-text {
+				width: 40%;
+			} // end text 2
+
+			.thumbs {
+				.thumbs();
+			} // end thumbs
+
+		} // end portfolio 2
+
+
+		.portfolio3 {
+			.flex();
+			justify-content: space-evenly;
+			margin: @portfolio-margins;
+
+			.portfolio3-text {
+				width: 40%;
+				text-align: right;
+			}
+
+			.thumbs {
+				.thumbs();
+			} // end thumbs
+		} //end portfolio 3
+	} // end container
+
+
+} // end section
+
+
+// Work History
+
+#work {
+	.padding();
+}
+
+// Contact
+
+
+
+// Footer
+
+footer {
+	margin: 5% auto 2% auto;
+	.flex();
+}
