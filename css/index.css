@@ -288,11 +288,26 @@ header .navbar a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #portfolio {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+}
 #portfolio .portfolio-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 #portfolio .portfolio-container .portfolio1 {
   display: flex;
@@ -300,9 +315,23 @@ header .navbar a {
   justify-content: space-between;
   margin: 3% auto 3% auto;
 }
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #portfolio .portfolio-container .portfolio1 .portfolio1-text {
   text-align: right;
   width: 40%;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio1 .portfolio1-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+  }
 }
 #portfolio .portfolio-container .portfolio1 .thumbs {
   height: 300px;
@@ -316,8 +345,22 @@ header .navbar a {
   flex-direction: row-reverse;
   margin: 3% auto 3% auto;
 }
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #portfolio .portfolio-container .portfolio2 .portfolio2-text {
   width: 40%;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio2 .portfolio2-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+  }
 }
 #portfolio .portfolio-container .portfolio2 .thumbs {
   height: 300px;
@@ -330,9 +373,24 @@ header .navbar a {
   justify-content: space-between;
   margin: 3% auto 3% auto;
 }
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #portfolio .portfolio-container .portfolio3 .portfolio3-text {
   width: 40%;
   text-align: right;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio3 .portfolio3-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 5%;
+  }
 }
 #portfolio .portfolio-container .portfolio3 .thumbs {
   height: 300px;

@@ -280,7 +280,9 @@ header {
 
 
 	@media (max-width: 500px){
-
+		padding: 0;
+		.flexColumn();
+		margin-top: 5%;
 	}
 
 	.portfolio-container {
@@ -288,14 +290,31 @@ header {
 		justify-content: space-between; 
 		width: 80%;
 
+		@media (max-width: 500px) {
+			.flexColumn();
+			width: 100%;
+		}
+
 		.portfolio1 {
 			.flexCenter();
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
+
 			.portfolio1-text {
 				text-align: right;
 				width: 40%;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
+				}
+
 			} // end text 1
 
 			.thumbs {
@@ -310,8 +329,21 @@ header {
 			flex-direction: row-reverse;
 			margin: @portfolio-margins;
 
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
+
 			.portfolio2-text {
 				width: 40%;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
+				}
+
+
 			} // end text 2
 
 			.thumbs {
@@ -328,9 +360,21 @@ header {
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
+
 			.portfolio3-text {
 				width: 40%;
 				text-align: right;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
+					margin-bottom: 5%;
+				}
 			}
 
 			.thumbs {
