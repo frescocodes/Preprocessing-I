@@ -304,24 +304,47 @@ header {
 #skills {
 	background-color: @fourth-color;
 	.padding();
-	.flexCenter();
+	.flexColumn();
+	align-items: center;
+	color: #fff;
+	padding-top: 5%;
+	padding-bottom: 8%;
 
 	.skills-container {
 		color: #fff;
-		width: 80%;
-		.flexColumn();
-		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 3%;
 
 		.skills1, .skills2, .skills3 {
-			// .flexColumn();
+			// display: flex;
+			// align-items: center;
+			width: 30%;
+			.flexColumn();
+			align-items: center;
+
+			.fa-html5 {
+				// color: #F16529;
+				color: @secondary-color;
+			}
+
+			.fa-css3-alt {
+				// color: #2965f1;
+				color: @secondary-color;
+			}
+
+			.fa-search {
+				// color: #34a853;
+				color: @secondary-color;
+			}
 
 			.skills1-text, .skills2-text, .skills3-text {
-				// align-self: center;
-
+				.flexColumn();
+				align-items: center;
+				text-align: center;
+				margin-top: 5%;
 			} // end skills-text
-			
 		} // end skills1,2,3
-
 	} // end skills-container
 } // end section
 
@@ -331,10 +354,11 @@ header {
 	.flexCenter();
 	justify-content: center;
 	background-color: @secondary-color;
+
 	.contact-container {
 		width: 80%;
-	}
-}
+	} // end container 
+} // end section
 
 
 // Footer

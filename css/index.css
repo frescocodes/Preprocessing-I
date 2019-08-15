@@ -296,14 +296,55 @@ header .navbar a {
   background-color: #537791;
   padding: 2% 15%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 #skills .skills-container {
   color: #fff;
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+#skills .skills-container .skills1,
+#skills .skills-container .skills2,
+#skills .skills-container .skills3 {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#skills .skills-container .skills1 .fa-html5,
+#skills .skills-container .skills2 .fa-html5,
+#skills .skills-container .skills3 .fa-html5 {
+  color: #f7f6e7;
+}
+#skills .skills-container .skills1 .fa-css3-alt,
+#skills .skills-container .skills2 .fa-css3-alt,
+#skills .skills-container .skills3 .fa-css3-alt {
+  color: #f7f6e7;
+}
+#skills .skills-container .skills1 .fa-search,
+#skills .skills-container .skills2 .fa-search,
+#skills .skills-container .skills3 .fa-search {
+  color: #f7f6e7;
+}
+#skills .skills-container .skills1 .skills1-text,
+#skills .skills-container .skills2 .skills1-text,
+#skills .skills-container .skills3 .skills1-text,
+#skills .skills-container .skills1 .skills2-text,
+#skills .skills-container .skills2 .skills2-text,
+#skills .skills-container .skills3 .skills2-text,
+#skills .skills-container .skills1 .skills3-text,
+#skills .skills-container .skills2 .skills3-text,
+#skills .skills-container .skills3 .skills3-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
 }
 #contact {
   padding: 2% 15%;
