@@ -416,8 +416,6 @@ header {
 		}
 
 		.skills1, .skills2, .skills3 {
-			// display: flex;
-			// align-items: center;
 			width: 30%;
 			.flexColumn();
 			align-items: center;
@@ -450,6 +448,11 @@ header {
 	.flexCenter();
 	justify-content: center;
 	background-color: @secondary-color;
+
+	@media (max-width: 500px){
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
 
 	.contact-container {
 		width: 80%;

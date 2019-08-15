@@ -479,6 +479,12 @@ header .navbar a {
   justify-content: center;
   background-color: #f7f6e7;
 }
+@media (max-width: 500px) {
+  #contact {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 #contact .contact-container {
   width: 80%;
 }
