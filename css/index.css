@@ -164,9 +164,21 @@ header {
   width: 100%;
   padding: 2% 15%;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 header .logo {
   width: 8%;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  header .logo {
+    display: none;
+  }
 }
 header .grow-social {
   transition: all 0.3s ease-in-out;
@@ -181,6 +193,15 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 header .navbar a {
   text-decoration: none;
   color: #537791;
@@ -188,11 +209,19 @@ header .navbar a {
   letter-spacing: 3px;
 }
 #intro {
-  height: 75vh;
+  height: 70vh;
   background-color: #e7e6e1;
   margin: 0;
   width: 100%;
   padding: 2% 15%;
+}
+@media (max-width: 500px) {
+  #intro {
+    height: 90vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 #intro .intro-container {
   position: relative;
@@ -200,12 +229,29 @@ header .navbar a {
   width: 70%;
   top: 25%;
 }
+@media (max-width: 500px) {
+  #intro .intro-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #intro .intro-container .socials {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   width: 30%;
   margin-top: 2%;
+}
+@media (max-width: 500px) {
+  #intro .intro-container .socials {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 #intro .intro-container .socials a {
   color: black;
@@ -242,11 +288,26 @@ header .navbar a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #portfolio {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+}
 #portfolio .portfolio-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 #portfolio .portfolio-container .portfolio1 {
   display: flex;
@@ -254,9 +315,23 @@ header .navbar a {
   justify-content: space-between;
   margin: 3% auto 3% auto;
 }
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #portfolio .portfolio-container .portfolio1 .portfolio1-text {
   text-align: right;
   width: 40%;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio1 .portfolio1-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+  }
 }
 #portfolio .portfolio-container .portfolio1 .thumbs {
   height: 300px;
@@ -267,13 +342,25 @@ header .navbar a {
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
   margin: 3% auto 3% auto;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #portfolio .portfolio-container .portfolio2 .portfolio2-text {
   width: 40%;
 }
-#portfolio .portfolio-container .portfolio2 .portfolio2-text a {
-  text-decoration: none;
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio2 .portfolio2-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+  }
 }
 #portfolio .portfolio-container .portfolio2 .thumbs {
   height: 300px;
@@ -286,9 +373,24 @@ header .navbar a {
   justify-content: space-between;
   margin: 3% auto 3% auto;
 }
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #portfolio .portfolio-container .portfolio3 .portfolio3-text {
   width: 40%;
   text-align: right;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .portfolio3 .portfolio3-text {
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 5%;
+  }
 }
 #portfolio .portfolio-container .portfolio3 .thumbs {
   height: 300px;
@@ -305,11 +407,26 @@ header .navbar a {
   padding-top: 5%;
   padding-bottom: 8%;
 }
+@media (max-width: 500px) {
+  #skills {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #skills .skills-container {
   color: #fff;
   display: flex;
   justify-content: space-between;
   padding-top: 3%;
+}
+@media (max-width: 500px) {
+  #skills .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #skills .skills-container .skills1,
 #skills .skills-container .skills2,
@@ -319,16 +436,23 @@ header .navbar a {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #skills .skills-container .skills1,
+  #skills .skills-container .skills2,
+  #skills .skills-container .skills3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
 #skills .skills-container .skills1 .fa-html5,
 #skills .skills-container .skills2 .fa-html5,
-#skills .skills-container .skills3 .fa-html5 {
-  color: #f7f6e7;
-}
+#skills .skills-container .skills3 .fa-html5,
 #skills .skills-container .skills1 .fa-css3-alt,
 #skills .skills-container .skills2 .fa-css3-alt,
-#skills .skills-container .skills3 .fa-css3-alt {
-  color: #f7f6e7;
-}
+#skills .skills-container .skills3 .fa-css3-alt,
 #skills .skills-container .skills1 .fa-search,
 #skills .skills-container .skills2 .fa-search,
 #skills .skills-container .skills3 .fa-search {
@@ -354,6 +478,12 @@ header .navbar a {
   display: flex;
   justify-content: center;
   background-color: #f7f6e7;
+}
+@media (max-width: 500px) {
+  #contact {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 #contact .contact-container {
   width: 80%;

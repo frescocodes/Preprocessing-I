@@ -96,6 +96,11 @@ html, body {
 }
 
 
+.mobileMargin(){
+	margin: 2% 5%;
+}
+
+
 // general styling
 body {
 	background-color: @main-color;
@@ -123,10 +128,6 @@ h3 {
 	font-size: 1.2rem;
 }
 
-.wrapper {
-	// padding: 2% 15%;
-}
-
 
 // Header
 
@@ -137,9 +138,20 @@ header {
 	width: 100%;
 	.padding();
 
+	@media (max-width: 500px) {
+		.flexCenter();
+		width: 100%;
+		}
+
 	.logo {
 		width: 8%;
 		border-radius: 50%;
+
+		@media (max-width: 500px) {
+			display: none;
+		}
+
+
 	} // end logo
 
 	.grow-social {
@@ -156,6 +168,13 @@ header {
 		justify-content: space-between;
 		align-items: center;
 
+		@media (max-width: 500px) {
+				width: 100%;
+				.flexCenter();
+				justify-content: space-between;
+				align-items: center;
+			}
+
 		a {
 			text-decoration: none;
 			color: @fourth-color;
@@ -171,11 +190,17 @@ header {
 // Intro
 
 #intro {
-	height: 75vh;
+	height: 70vh;
 	background-color: @main-color;
 	margin: 0;
 	width: 100%;
 	.padding();
+
+	@media (max-width: 500px) {
+		height: 90vh;
+		padding: 0;
+		.flexCenter();
+	}
 
 	.intro-container {
 		position: relative;
@@ -183,11 +208,24 @@ header {
 		width: 70%;
 		top: 25%;
 
+		@media (max-width: 500px) {
+			position: static;
+			.flexColumn();
+			align-items: center;
+			justify-content: center;
+		}
+
 		.socials {
 			.flexCenter();
 			justify-content: space-between;
 			width: 30%;
 			margin-top: 2%;
+
+			@media (max-width: 500px) {
+				.flexCenter();
+				justify-content: space-between;
+				width: 100%;
+			}
 			
 			a {
 				color: black;
@@ -241,20 +279,42 @@ header {
 	.flexCenter();
 
 
+	@media (max-width: 500px){
+		padding: 0;
+		.flexColumn();
+		margin-top: 5%;
+	}
+
 	.portfolio-container {
 		.flexColumn();
-		flex-direction: column;
 		justify-content: space-between; 
 		width: 80%;
+
+		@media (max-width: 500px) {
+			.flexColumn();
+			width: 100%;
+		}
 
 		.portfolio1 {
 			.flexCenter();
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
+
 			.portfolio1-text {
 				text-align: right;
 				width: 40%;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
+				}
+
 			} // end text 1
 
 			.thumbs {
@@ -266,18 +326,31 @@ header {
 		.portfolio2 {
 			.flexCenter();
 			justify-content: space-between;
+			flex-direction: row-reverse;
 			margin: @portfolio-margins;
+
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
 
 			.portfolio2-text {
 				width: 40%;
-				a {
-					text-decoration: none;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
 				}
+
+
 			} // end text 2
 
 			.thumbs {
 				.thumbs();
 			} // end thumbs
+
+
 
 		} // end portfolio 2
 
@@ -287,9 +360,21 @@ header {
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
+			@media (max-width: 500px) {
+				.flexColumn();
+				align-items: center;
+			}
+
 			.portfolio3-text {
 				width: 40%;
 				text-align: right;
+
+				@media (max-width: 500px) {
+					margin-top: 5%;
+					text-align: center;
+					width: 80%;
+					margin-bottom: 5%;
+				}
 			}
 
 			.thumbs {
@@ -313,33 +398,39 @@ header {
 	padding-top: 5%;
 	padding-bottom: 8%;
 
+	@media (max-width: 500px) {
+		padding-top: 5%;
+		.flexColumn();
+		align-items: center;
+	}
+
 	.skills-container {
 		color: #fff;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 3%;
 
+		@media (max-width: 500px) {
+			.flexColumn();
+			align-items: center;
+		}
+
 		.skills1, .skills2, .skills3 {
-			// display: flex;
-			// align-items: center;
 			width: 30%;
 			.flexColumn();
 			align-items: center;
 
-			.fa-html5 {
+			@media (max-width: 500px) {
+				.flexColumn();
+				width: 80%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+			}
+
+			.fa-html5, .fa-css3-alt, .fa-search {
 				// color: #F16529;
 				color: @secondary-color;
-			}
-
-			.fa-css3-alt {
-				// color: #2965f1;
-				color: @secondary-color;
-			}
-
-			.fa-search {
-				// color: #34a853;
-				color: @secondary-color;
-			}
+			} // end icons
 
 			.skills1-text, .skills2-text, .skills3-text {
 				.flexColumn();
@@ -357,6 +448,11 @@ header {
 	.flexCenter();
 	justify-content: center;
 	background-color: @secondary-color;
+
+	@media (max-width: 500px){
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
 
 	.contact-container {
 		width: 80%;
@@ -380,3 +476,5 @@ footer {
 		color: @third-color;
 	}
 }
+
+// pages test
