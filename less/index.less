@@ -141,7 +141,6 @@ header {
 	@media (max-width: 500px) {
 		.flexCenter();
 		width: 100%;
-
 		}
 
 	.logo {
@@ -151,6 +150,8 @@ header {
 		@media (max-width: 500px) {
 			display: none;
 		}
+
+
 	} // end logo
 
 	.grow-social {
@@ -195,17 +196,36 @@ header {
 	width: 100%;
 	.padding();
 
+	@media (max-width: 500px) {
+		height: 90vh;
+		padding: 0;
+		.flexCenter();
+	}
+
 	.intro-container {
 		position: relative;
 		left: 10%;
 		width: 70%;
 		top: 25%;
 
+		@media (max-width: 500px) {
+			position: static;
+			.flexColumn();
+			align-items: center;
+			justify-content: center;
+		}
+
 		.socials {
 			.flexCenter();
 			justify-content: space-between;
 			width: 30%;
 			margin-top: 2%;
+
+			@media (max-width: 500px) {
+				.flexCenter();
+				justify-content: space-between;
+				width: 100%;
+			}
 			
 			a {
 				color: black;
