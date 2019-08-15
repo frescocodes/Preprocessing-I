@@ -137,11 +137,11 @@ body {
 /************ BEGIN STYLING ************/
 body {
   background-color: #e7e6e1;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
 p {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 1.1rem;
 }
 h1 {
@@ -184,7 +184,7 @@ header .navbar {
 header .navbar a {
   text-decoration: none;
   color: #537791;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 3px;
 }
 #intro {
@@ -244,7 +244,6 @@ header .navbar a {
 }
 #portfolio .portfolio-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
@@ -293,13 +292,18 @@ header .navbar a {
   width: 300px;
   background-color: white;
 }
-#work {
+#skills {
+  background-color: #537791;
   padding: 2% 15%;
   display: flex;
   justify-content: center;
 }
-#work .work-container {
+#skills .skills-container {
+  color: #fff;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #contact {
   padding: 2% 15%;
@@ -311,13 +315,15 @@ header .navbar a {
   width: 80%;
 }
 footer {
-  margin: 5% auto 2% auto;
   display: flex;
   justify-content: center;
+  background-color: #f7f6e7;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 footer p {
   font-family: 'Merriweather', serif;
-  font-size: 12px;
+  sfont-size: 12px;
   letter-spacing: 0px;
   color: #c1c0b9;
 }

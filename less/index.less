@@ -66,7 +66,7 @@ html, body {
 
 // variables
 @merri: 'Merriweather', serif;
-@oswald: 'Oswald', sans-serif;
+@oswald: 'Roboto', sans-serif;
 @main-color: #e7e6e1;
 @secondary-color: #f7f6e7;
 @third-color: #c1c0b9;
@@ -75,9 +75,14 @@ html, body {
 
 
 // mixins 
-.flex(){
+.flexCenter(){
 	display: flex;
 	justify-content: center;
+}
+
+.flexColumn(){
+	display: flex;
+	flex-direction: column;
 }
 
 .padding(){
@@ -99,7 +104,7 @@ body {
 }
 
 p {
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 1.1rem;
 }
 
@@ -127,7 +132,7 @@ h3 {
 
 header {
 	background-color: @main-color;
-	.flex();
+	.flexCenter();
 	justify-content: space-between;
 	width: 100%;
 	.padding();
@@ -147,7 +152,7 @@ header {
 
 	.navbar {
 		width: 30%;
-		.flex();
+		.flexCenter();
 		justify-content: space-between;
 		align-items: center;
 
@@ -179,7 +184,7 @@ header {
 		top: 25%;
 
 		.socials {
-			.flex();
+			.flexCenter();
 			justify-content: space-between;
 			width: 30%;
 			margin-top: 2%;
@@ -233,17 +238,17 @@ header {
 #portfolio {
 	background-color: @secondary-color;
 	.padding();
-	.flex();
+	.flexCenter();
 
 
 	.portfolio-container {
-		.flex();
+		.flexColumn();
 		flex-direction: column;
 		justify-content: space-between; 
 		width: 80%;
 
 		.portfolio1 {
-			.flex();
+			.flexCenter();
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
@@ -259,7 +264,7 @@ header {
 
 
 		.portfolio2 {
-			.flex();
+			.flexCenter();
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
@@ -275,7 +280,7 @@ header {
 
 
 		.portfolio3 {
-			.flex();
+			.flexCenter();
 			justify-content: space-between;
 			margin: @portfolio-margins;
 
@@ -288,7 +293,7 @@ header {
 				.thumbs();
 			} // end thumbs
 		} //end portfolio 3
-	} // end container
+	} // end portfolio-container
 
 
 } // end section
@@ -296,21 +301,34 @@ header {
 
 // Work History
 
-#work {
+#skills {
+	background-color: @fourth-color;
 	.padding();
-	.flex();
-	justify-content: center;
+	.flexCenter();
 
-	.work-container {
+	.skills-container {
+		color: #fff;
 		width: 80%;
-	}
+		.flexColumn();
+		align-items: center;
 
-}
+		.skills1, .skills2, .skills3 {
+			// .flexColumn();
+
+			.skills1-text, .skills2-text, .skills3-text {
+				// align-self: center;
+
+			} // end skills-text
+			
+		} // end skills1,2,3
+
+	} // end skills-container
+} // end section
 
 // Contact
 #contact {
 	.padding();
-	.flex();
+	.flexCenter();
 	justify-content: center;
 	background-color: @secondary-color;
 	.contact-container {
@@ -322,11 +340,14 @@ header {
 // Footer
 
 footer {
-	margin: 5% auto 2% auto;
-	.flex();
+	// margin: 5% auto 2% auto;
+	.flexCenter();
+	background-color: @secondary-color;
+	padding-top: 5%;
+	padding-bottom: 3%;
 
 	p {
-		font-family: @merri;
+		font-family: @merri;s
 		font-size: 12px;
 		letter-spacing: 0px;
 		color: @third-color;
