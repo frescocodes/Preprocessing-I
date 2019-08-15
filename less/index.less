@@ -398,11 +398,22 @@ header {
 	padding-top: 5%;
 	padding-bottom: 8%;
 
+	@media (max-width: 500px) {
+		padding-top: 5%;
+		.flexColumn();
+		align-items: center;
+	}
+
 	.skills-container {
 		color: #fff;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 3%;
+
+		@media (max-width: 500px) {
+			.flexColumn();
+			align-items: center;
+		}
 
 		.skills1, .skills2, .skills3 {
 			// display: flex;
@@ -410,6 +421,13 @@ header {
 			width: 30%;
 			.flexColumn();
 			align-items: center;
+
+			@media (max-width: 500px) {
+				.flexColumn();
+				width: 80%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+			}
 
 			.fa-html5, .fa-css3-alt, .fa-search {
 				// color: #F16529;
