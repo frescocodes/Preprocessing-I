@@ -272,6 +272,9 @@ header .navbar a {
 #portfolio .portfolio-container .portfolio2 .portfolio2-text {
   width: 40%;
 }
+#portfolio .portfolio-container .portfolio2 .portfolio2-text a {
+  text-decoration: none;
+}
 #portfolio .portfolio-container .portfolio2 .thumbs {
   height: 300px;
   width: 300px;
