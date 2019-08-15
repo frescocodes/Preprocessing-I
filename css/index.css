@@ -164,9 +164,21 @@ header {
   width: 100%;
   padding: 2% 15%;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 header .logo {
   width: 8%;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  header .logo {
+    display: none;
+  }
 }
 header .grow-social {
   transition: all 0.3s ease-in-out;
@@ -181,6 +193,15 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 header .navbar a {
   text-decoration: none;
   color: #537791;
@@ -188,7 +209,7 @@ header .navbar a {
   letter-spacing: 3px;
 }
 #intro {
-  height: 75vh;
+  height: 70vh;
   background-color: #e7e6e1;
   margin: 0;
   width: 100%;
@@ -267,6 +288,7 @@ header .navbar a {
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
   margin: 3% auto 3% auto;
 }
 #portfolio .portfolio-container .portfolio2 .portfolio2-text {
@@ -318,14 +340,10 @@ header .navbar a {
 }
 #skills .skills-container .skills1 .fa-html5,
 #skills .skills-container .skills2 .fa-html5,
-#skills .skills-container .skills3 .fa-html5 {
-  color: #f7f6e7;
-}
+#skills .skills-container .skills3 .fa-html5,
 #skills .skills-container .skills1 .fa-css3-alt,
 #skills .skills-container .skills2 .fa-css3-alt,
-#skills .skills-container .skills3 .fa-css3-alt {
-  color: #f7f6e7;
-}
+#skills .skills-container .skills3 .fa-css3-alt,
 #skills .skills-container .skills1 .fa-search,
 #skills .skills-container .skills2 .fa-search,
 #skills .skills-container .skills3 .fa-search {

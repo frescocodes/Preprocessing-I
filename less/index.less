@@ -96,6 +96,11 @@ html, body {
 }
 
 
+.mobileMargin(){
+	margin: 2% 5%;
+}
+
+
 // general styling
 body {
 	background-color: @main-color;
@@ -123,10 +128,6 @@ h3 {
 	font-size: 1.2rem;
 }
 
-.wrapper {
-	// padding: 2% 15%;
-}
-
 
 // Header
 
@@ -137,9 +138,19 @@ header {
 	width: 100%;
 	.padding();
 
+	@media (max-width: 500px) {
+		.flexCenter();
+		width: 100%;
+
+		}
+
 	.logo {
 		width: 8%;
 		border-radius: 50%;
+
+		@media (max-width: 500px) {
+			display: none;
+		}
 	} // end logo
 
 	.grow-social {
@@ -156,6 +167,13 @@ header {
 		justify-content: space-between;
 		align-items: center;
 
+		@media (max-width: 500px) {
+				width: 100%;
+				.flexCenter();
+				justify-content: space-between;
+				align-items: center;
+			}
+
 		a {
 			text-decoration: none;
 			color: @fourth-color;
@@ -171,7 +189,7 @@ header {
 // Intro
 
 #intro {
-	height: 75vh;
+	height: 70vh;
 	background-color: @main-color;
 	margin: 0;
 	width: 100%;
@@ -241,9 +259,12 @@ header {
 	.flexCenter();
 
 
+	@media (max-width: 500px){
+
+	}
+
 	.portfolio-container {
 		.flexColumn();
-		flex-direction: column;
 		justify-content: space-between; 
 		width: 80%;
 
@@ -266,6 +287,7 @@ header {
 		.portfolio2 {
 			.flexCenter();
 			justify-content: space-between;
+			flex-direction: row-reverse;
 			margin: @portfolio-margins;
 
 			.portfolio2-text {
@@ -275,6 +297,8 @@ header {
 			.thumbs {
 				.thumbs();
 			} // end thumbs
+
+
 
 		} // end portfolio 2
 
@@ -323,20 +347,10 @@ header {
 			.flexColumn();
 			align-items: center;
 
-			.fa-html5 {
+			.fa-html5, .fa-css3-alt, .fa-search {
 				// color: #F16529;
 				color: @secondary-color;
-			}
-
-			.fa-css3-alt {
-				// color: #2965f1;
-				color: @secondary-color;
-			}
-
-			.fa-search {
-				// color: #34a853;
-				color: @secondary-color;
-			}
+			} // end icons
 
 			.skills1-text, .skills2-text, .skills3-text {
 				.flexColumn();
