@@ -3,9 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakotah - Web Developer</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/247fe43040.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- main CSS -->
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +18,118 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="wrapper">
+
+    <header id="header">
+
+      <div class="logo-wrapper">
+        <a href="index.html"><img class ="logo grow-social" src="img/logo.jpg" alt="logo"></a> 
+      </div>
+
+      <nav class="navbar">
+        <a href="#header">home</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="https://github.com/frescocodes">github</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+    </header>
+    <section id="intro">
+      <div class="intro-container">
+        <h1>Hi, I'm Dakotah.</h1>
+        <h2>and I'm building awesome digital experiences for every screen.</h2>
+        <div class="socials">
+
+          <a href="https://github.com/frescocodes" class="fab fa-github fa-2x grow-social"></a>
+          <a href="https://twitter.com/frescodsntweet" class="fab fa-twitter fa-2x grow-social" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/dakotah-huey-76439583/" class="fab fa-linkedin fa-2x grow-social" target="_blank"></a>
+          <a href="https://instagram.com/dakotahhuey" class="fab fa-instagram fa-2x grow-social" target="_blank"></a>
+          <a href="https://mail.google.com" class="fas fa-envelope fa-2x grow-social" target="_blank"></a>
+          
+        </div> <!-- end socials -->
+      </div> <!-- end intro-container -->
+    </section>
+    
+    <section id="portfolio">
+      <div class="portfolio-container">
+
+        <div class="portfolio1"> <!-- right -->
+          <div class="thumbs"></div> 
+          <!-- <img src="" alt="thumb1"> -->
+          <div class="portfolio1-text">
+              <a href="https://github.com/frescocodes/Sprint-Challenge--User-Interface"><h2>Portfolio 1</h2></a>
+              <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+            </div>
+        </div> <!-- end portfolio1 -->
+
+        <div class="portfolio2"> <!-- left -->
+          <div class="thumbs"></div>
+          <div class="portfolio2-text">
+              <a href="https://github.com/frescocodes/Sprint-Challenge--User-Interface"><h2>Portfolio 2</h2></a>
+              <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+            </div>
+          <!-- <img src="" alt="thumb2"> -->
+        </div> <!-- end portfolio2 -->
+
+        <div class="portfolio3"> <!-- right -->
+          <div class="thumbs"></div>
+          <!-- <img src="" alt="thumb3"> -->
+          <div class="portfolio3-text">
+              <a href="https://github.com/frescocodes/Sprint-Challenge--User-Interface"><h2>Portfolio 3</h2></a>
+            <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+          </div> 
+        </div> <!-- end portfolio2 -->
+
+      </div> <!-- end container -->
+    </section>
+
+    <section id="skills">
+
+      <h2>Skills</h2>
+      <div class="skills-container">
+        
+        <div class="skills1"> <!-- right -->
+          <i class="fab fa-html5 fa-9x"></i> 
+          <div class="skills1-text">
+            <h2>HTML5</h2>
+            <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+          </div> <!-- end skills1 text -->
+        </div> <!-- end skills1 -->
+
+        <div class="skills2"> <!-- left -->
+          <i class="fab fa-css3-alt fa-9x"></i>
+          <div class="skills2-text">
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+          </div><!-- end skills2 text -->
+        </div> <!-- end portfolio2 -->
+
+        <div class="skills3"> <!-- right -->
+          <i class="fas fa-search fa-9x"></i> 
+          <div class="skills3-text">
+            <h2>Professional Googler</h2>
+            <p>Lorem ipsum dolor amet poke 90's gluten-free gochujang fam. VHS hexagon +1 PBR&B migas semiotics, woke truffaut kitsch glossier occupy. Normcore woke green juice snackwave, 90's hashtag scenester tofu.</p>
+          </div><!-- end skills3 text -->
+        </div> <!-- end portfolio2 -->
+
+      </div> <!-- end work-container -->
+    </section> <!-- end work section -->
+
+    <section id="contact">
+      <div class="contact-container">
+
+        <h2>Contact</h2>
+        <p>Have a cool idea? Just want to say hi? Get in touch!</p>
+        <a href="mailto: dakotahhuey@gmail.com">Say hello.</a>
+
+      </div>
+
+    </section> <!-- end contact section-->
+    
+    <footer id="footer">
+      <p>Copyright © 2019 Dakotah Huey</p>
+    </footer>
+<!-- test -->
+  </div> <!-- wrapper end -->
 </body>
 </html>
